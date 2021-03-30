@@ -1,0 +1,34 @@
+<div class="container mt-2">
+    <h3>{{pelicula.title}}</h3>
+    <hr>
+    <div class="row ">
+        <div class="col-md-5 animated  slideInUp" align="center">
+
+            <div class="imagen-buscador">
+                <img src="{{pelicula.backdrop_path}}" alt="">
+            </div>
+
+        </div>
+
+        <div class="col-md-7 animated slideInDown">
+            <h5 class="text-center">Sinopsis <br><br> {{pelicula.overview}}</h5>
+            <hr>
+
+
+            <div class="d-flex mt-3">
+                <h5>Genero : </h5>
+                <div *ngFor="let genero of pelicula.genres">
+                    <span class="badge badge-primary mx-2">{{pelicula?.original_title}}}</span> </div>
+            </div>
+
+
+            <div class="d-flex">
+                <h5 class="mr-2">Popularidad: </h5>
+                {{ pelicula?.popularity}}
+            </div>
+            <div class="d-flex">
+                <h5 class="mr-2">Valoración: </h5>
+                :{{ pelicula?.vote_average}}/10
+
+            </div>
+        </div>

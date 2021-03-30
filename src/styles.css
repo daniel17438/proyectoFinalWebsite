@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background: fixed;
+    margin: 0;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/skin-side-up.png");
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
